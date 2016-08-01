@@ -11,38 +11,27 @@
     <link rel="stylesheet" href="03_helpers.css"/>
 </head>
 <body>
-    <div class="five-hundred-height col l12 m12 s12 valign-wrapper">
-        <h5 class="valign">This should be vertically aligned</h5>
+    <img class="responsive-img" src="img/wtl2.jpg">
+
+
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+                <div class="col s3">
+                    <img src="img/wtl2.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s9">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="left">left float</div>
-    <div class="right">right float</div>
-
-    <div>
-        <h5 class="left-align">This should be left aligned</h5>
-    </div>
-    <div>
-        <h5 class="right-align">This should be right aligned</h5>
-    </div>
-    <div>
-        <h5 class="center-align">This should be center aligned</h5>
-    </div>
-
-    <div class="hide">hide</div>
-    <div class="hide-on-small-only">hide-on-small-only</div>
-    <div class="hide-on-med-only">hide-on-med-only</div>
-    <div class="hide-on-med-and-down">hide-on-med-and-down</div>
-    <div class="hide-on-med-and-up">hide-on-med-and-up</div>
-    <div class="hide-on-large-only">hide-on-large-only</div>
-
-    <h4 class="truncate">This is an extremely long title that will be truncated</h4>
-
-    <div class="card-panel hoverable"> Hoverable Card Panel</div>
-
-    <!--Because we override many of the default browser styles and elements,
-     we provide the
-            .browser-default
-     class to revert these elements to their original state.-->
+    <video class="responsive-video" controls>
+        <source src="video/big_buck_bunny.mp4" type="video/mp4">
+    </video>
 
 </body>
 <!-- bower:js -->
