@@ -1,0 +1,14 @@
+{
+  "name": "materializerdemo",
+  "description": "materializer demo project",
+  "main": "index.js",
+  "authors": [
+    "superman90 <liwentao90@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "materialize": "^0.97.7",
+    "jquery": "^3.1.0"
+  }
+}

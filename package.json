@@ -1,0 +1,28 @@
+{
+  "name": "materializerdemo",
+  "version": "1.0.0",
+  "description": "materializer demo project",
+  "main": "index.js",
+  "scripts": {
+    "inject": "gulp inject"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.14.0",
+    "browser-sync-spa": "^1.0.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-hub": "frankwallis/gulp-hub#d461b9c700df9010d0a8694e4af1fb96d9f38bf4",
+    "gulp-inject": "^4.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "wiredep": "^4.0.0"
+  }
+}

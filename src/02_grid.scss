@@ -1,0 +1,8 @@
+@import "../bower_components/materialize/sass/materialize";
+
+.ilike-red-container {
+  @extend .red, .darken-4;
+}
+.ilike-red-container-text {
+  @extend .red-text, .text-darken-4;
+}
