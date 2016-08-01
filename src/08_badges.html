@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_badges</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link rel="stylesheet" href="08_badges.css"/>
+</head>
+<body>
+    <div class="collection">
+        <a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+        <a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
+        <a href="#!" class="collection-item">Alan</a>
+        <a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+    </div>
+
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">one<span class="badge">1</span></a></li>
+        <li><a href="#!">two<span class="new badge">1</span></a></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+    <a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">sass</a></li>
+                <li><a href="">sass <span class="new badge">4</span></a></li>
+                <li><a href="">sass</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card-panel white">This is a card panel with a teal lighten-2 class<span class="new badge" data-badge-caption="custom caption">4</span></div>
+    <div class="card-panel white">This is a card panel with a teal lighten-2 class<span class="badge" data-badge-caption="custom caption">4</span></div>
+
+    <div class="card-panel white">This is a card panel with a teal lighten-2 class <span class="new badge red">4</span></div>
+    <div class="card-panel white">This is a card panel with a teal lighten-2 class <span class="new badge blue">4</span></div>
+
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+</html>
