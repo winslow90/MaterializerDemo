@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20_carousel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="20_carousel.css"/>
+</head>
+<body>
+        <div id="carousel1" class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/b1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/b2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/b3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/b4.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="img/b5.jpg"></a>
+        </div>
+
+    <div class="row">
+        <div id="carousel2" class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="img/b1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/b2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/b3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/b4.jpg"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="carousel3" class="carousel carousel-slider center" data-indicators="true">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item red white-text" href="#one!">
+                <h2>First Panel</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<script>
+    $(function(){
+        $('#carousel1').carousel();
+        // Next slide
+//        $('.carousel').carousel('next');
+//        $('.carousel').carousel('next', 3); // Move next n times.
+//// Previous slidehttp://localhost:3000/20_carousel.html#one!
+//        $('.carousel').carousel('prev');
+//        $('.carousel').carousel('prev', 4); // Move prev n times.
+//// Set to nth slide
+//        $('.carousel').carousel('set', 4);
+
+//        time_constant	Transition time. (Default: 200)
+//        dist	Perspective zoom. If 0, all items are the same size. (Default: -100)
+//        shift	Set the spacing of the center item. (Default: 0)
+//        padding	Set the padding between non center items. (Default: 0)
+//        full_width	Make the carousel a full width slider like the second example. (Default: false)
+//        indicators	Set to true to show indicators. (Default: false)
+//        no_wrap	Don't wrap around and cycle through items. (Default: false)
+
+        $('#carousel2').carousel({full_width:true});
+
+        $('#carousel3').carousel({full_width: true});
+    });
+</script>
+</html>
