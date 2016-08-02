@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>23_dropdown</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="23_dropdown.css"/>
+</head>
+<body>
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+    </ul>
+
+    <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>Drop Me! inline</a>
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<script>
+    $(function(){
+
+//        Initialization for dropdowns is only necessary if you create them dynamically.
+
+//        $('.dropdown-button').dropdown({
+//                    inDuration: 300,
+//                    outDuration: 225,
+//                    constrain_width: false, // Does not change width of dropdown to that of the activator
+//                    hover: true, // Activate on hover
+//                    gutter: 0, // Spacing from edge
+//                    belowOrigin: false, // Displays dropdown below the button
+//                    alignment: 'left' // Displays dropdown with edge aligned to the left of button
+//                }
+//        );
+
+
+//        You can also open dropdowns programatically, the below code will make your modal open on document ready:
+//        $('.dropdown-button').dropdown('open');
+
+
+//        You can also close dropdowns programatically:
+//        $('.dropdown-button').dropdown('close');
+
+    });
+</script>
+</html>
