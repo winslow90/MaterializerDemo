@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26_modals</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="26_modals.css"/>
+</head>
+<body>
+<!--to use that trigger, have to select and let it learn-->
+<!--// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered-->
+<!--$('.modal-trigger').leanModal();-->
+
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal1</a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!-- Modal Trigger -->
+    <a class="modal-trigger waves-effect waves-light btn" href="#modal2">Modal2 with fixed footer</a>
+
+    <!-- Modal Structure -->
+    <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+        </div>
+    </div>
+
+    <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal Bottom Sheet Modals</a>
+
+    <!-- Modal Structure -->
+    <div id="modal3" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+<!--if you prefer to use a button to open a modal specify the Modal ID in data-target rather than the href attribute.-->
+    <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<script>
+    $(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+
+//        You can also open modals programatically, the below code will make your modal open on document ready:
+        $('#modal1').openModal();
+//        You can also close them programatically:
+        $('#modal1').closeModal();
+
+//        $('.modal-trigger').leanModal({
+//            dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//            opacity: .5, // Opacity of modal background
+//            in_duration: 300, // Transition in duration
+//            out_duration: 200, // Transition out duration
+//            starting_top: '4%', // Starting top style attribute
+//            ending_top: '10%', // Ending top style attribute
+//            ready: function() { alert('Ready'); }, // Callback for Modal open
+//            complete: function() { alert('Closed'); } // Callback for Modal close
+        }
+
+    });
+</script>
+</html>
