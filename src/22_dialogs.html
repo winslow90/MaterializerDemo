@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22_dialogs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="22_dialogs.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <a class="waves-effect waves-light btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
+            <a class="waves-effect waves-light btn" onclick="displayCustomHTMLToast()">Toast with Action</a>
+            <a class="btn" onclick="Materialize.toast('I am a toast', 4000,'',function(){alert('Your toast was dismissed')})">Toast!</a>
+            <a class="waves-effect waves-light btn" onclick="Materialize.toast('I am a toast!', 3000, 'rounded')">Round Toast!</a>
+        </div>
+        <div>
+            <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>
+        </div>
+        <div class="row">
+            <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-html="true" data-position="bottom" data-delay="50" data-tooltip="I am tooltip" data-tooltip-id="68772d82-e70f-8490-373f-632703f09200"> Bottom</a>
+            <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="top" data-delay="50" data-tooltip="I am tooltip" data-tooltip-id="6282e949-6397-1428-999d-233bf75e0a1f"> Top</a>
+            <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="left" data-delay="50" data-tooltip="I am tooltip" data-tooltip-id="f1204e75-98fc-fc71-51d8-96b65bc88914"> Left</a>
+            <a class="btn tooltipped col s4 offset-s4 l2 offset-l1" data-position="right" data-delay="50" data-tooltip="I am tooltip" data-tooltip-id="c1f3d8f0-61f2-5c61-f855-c436b65a03ac"> Right</a>
+        </div>
+    </div>
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<script>
+    var displayCustomHTMLToast = function () {
+        var $toastContent = $('<span>I am toast content</span>');
+        Materialize.toast($toastContent, 5000);
+    }
+    $(function(){
+        // This will remove the tooltip functionality for the buttons on this page
+//        $('.tooltipped').tooltip('remove');
+    });
+</script>
+</html>
