@@ -1,0 +1,18 @@
+
+//to remove roboto or comment it
+//html {
+//  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+//}
+
+/* label color */
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
