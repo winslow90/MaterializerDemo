@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>39_mobile</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="39_mobile.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul id="slide-out" class="side-nav">
+                <li><div class="userView">
+                    <img class="background" src="img/b1.jpg">
+                    <a href="#!user"><img class="circle" src="img/wtl2.jpg"></a>
+                    <a href="#!name"><span class="white-text name">John Doe</span></a>
+                    <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Drag Out Menu</span>
+                        <p>This plugin includes several options for customizing the menu. See Plugin Options for details. And it is not working any more</p>
+                        <span class="card-title">Swipe to Dismiss</span>
+                        <p>On all devices, you can swipe to dismiss toasts.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <pre class="  language-javascript">  <code class=" language-javascript">
+            <span class="token keyword">var</span> options <span class="token operator">=</span> <span class="token punctuation">[</span></code>
+            <code id="call-1" class="language-javascript" style="color: rgb(239, 83, 80); background-color: rgb(51, 51, 51);"><span class="token punctuation">{</span>selector<span class="token punctuation">:</span> <span class="token string">'#staggered-test'</span><span class="token punctuation">,</span> offset<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> callback<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Materialize<span class="token punctuation">.</span><span class="token function">toast</span><span class="token punctuation">(</span><span class="token string">"This is our ScrollFire Demo!"</span><span class="token punctuation">,</span> <span class="token number">1500</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></code>
+            <code id="call-2" class="language-javascript" style="color: rgb(239, 83, 80); background-color: rgb(51, 51, 51);"><span class="token punctuation">{</span>selector<span class="token punctuation">:</span> <span class="token string">'#staggered-test'</span><span class="token punctuation">,</span> offset<span class="token punctuation">:</span> <span class="token number">205</span><span class="token punctuation">,</span> callback<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Materialize<span class="token punctuation">.</span><span class="token function">toast</span><span class="token punctuation">(</span><span class="token string">"Please continue scrolling!"</span><span class="token punctuation">,</span> <span class="token number">1500</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></code>
+            <code id="call-3" class="language-javascript" style="color: rgb(239, 83, 80); background-color: rgb(51, 51, 51);"><span class="token punctuation">{</span>selector<span class="token punctuation">:</span> <span class="token string">'#staggered-test'</span><span class="token punctuation">,</span> offset<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span> callback<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Materialize<span class="token punctuation">.</span><span class="token function">showStaggeredList</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span></code>
+            <code id="call-4" class="language-javascript" style="color: rgb(239, 83, 80); background-color: rgb(51, 51, 51);"><span class="token punctuation">{</span>selector<span class="token punctuation">:</span> <span class="token string">'#image-test'</span><span class="token punctuation">,</span> offset<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span> callback<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Materialize<span class="token punctuation">.</span><span class="token function">fadeInImage</span><span class="token punctuation">(</span><span class="token function">$</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span> <span class="token punctuation">}</span></code>
+          ];
+          Materialize.scrollFire(options);
+        </pre>
+
+        <ul id="staggered-test">
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+            <li>
+                <h4><a href="#">List Item</a></h4>
+                <p>This is a description</p>
+            </li>
+        </ul>
+
+
+        <img id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&amp;fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050">
+    </div>
+
+
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+<script>
+    $(function(){
+        $('.button-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                }
+        );
+        var options = [
+            {selector: '#staggered-test', offset: 50, callback: function(el) {
+                Materialize.toast("This is our ScrollFire Demo!", 1500 );
+            } },
+            {selector: '#staggered-test', offset: 205, callback: function(el) {
+                Materialize.toast("Please continue scrolling!", 1500 );
+            } },
+            {selector: '#staggered-test', offset: 400, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+            } },
+            {selector: '#image-test', offset: 500, callback: function(el) {
+                Materialize.fadeInImage($(el));
+            } }
+        ];
+        Materialize.scrollFire(options);
+
+    });
+
+</script>
+</html>
