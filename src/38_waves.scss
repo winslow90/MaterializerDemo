@@ -1,0 +1,26 @@
+
+//to remove roboto or comment it
+//html {
+//  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+//}
+
+/* label color */
+
+.collection {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+/*
+    When creating your CSS selector,
+    change "brown" to something of your choosing
+    */
+
+.waves-color-demo .btn:not(.waves-light), .waves-color-demo .btn-large:not(.waves-light) {
+  /* The alpha value allows the text and background color
+     of the button to still show through. */
+  background-color: #fff;
+  color: #212121;
+}
