@@ -6,24 +6,15 @@
 
 /* label color */
 
-#carbonads{
-  margin-top:50px;
-  margin-bottom:300px;
-  max-width: 150px;
-  font-size: 14px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  .carbon-poweredby{
-    position: relative;
-    left: 28px;
-    font-size: 11px;
-    color: #a0c7ef;
-  }
-}
 
-.out-tab-wrapper{
-  min-height: 2000px;
+#introduction{
+  min-height: 700px;
+}
+#structure{
+  min-height: 700px;
+}
+#initialization{
+  min-height: 700px;
 }
 
 // Class for when element is above threshold
@@ -39,4 +30,5 @@
 // Class for when element is pinned
 .pinned {
   position: fixed !important;
+
 }
