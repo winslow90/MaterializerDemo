@@ -42,6 +42,34 @@
       Materialize.scrollFire(options);
     </pre>
 
+    <ul id="staggered-test">
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+    </ul>
+
+
+    <img id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&amp;fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050">
+
+
+
     <footer class="page-footer">
         <div class="container">
             <div class="row">
@@ -72,23 +100,22 @@
 <!-- run `gulp inject` to automatically populate bower script dependencies -->
 <!-- endbower -->
 <script>
-    //TODO 30 scroll fire page not finished yet, requiring latter notices
     $(function(){
-//        var options = [
-//            {selector: '#staggered-test', offset: 50, callback: function(el) {
-//                Materialize.toast("This is our ScrollFire Demo!", 1500 );
-//            } },
-//            {selector: '#staggered-test', offset: 205, callback: function(el) {
-//                Materialize.toast("Please continue scrolling!", 1500 );
-//            } },
-//            {selector: '#staggered-test', offset: 400, callback: function(el) {
-//                Materialize.showStaggeredList($(el));
-//            } },
-//            {selector: '#image-test', offset: 500, callback: function(el) {
-//                Materialize.fadeInImage($(el));
-//            } }
-//        ];
-//        Materialize.scrollFire(options);
+        var options = [
+            {selector: '#staggered-test', offset: 50, callback: function(el) {
+                Materialize.toast("This is our ScrollFire Demo!", 1500 );
+            } },
+            {selector: '#staggered-test', offset: 205, callback: function(el) {
+                Materialize.toast("Please continue scrolling!", 1500 );
+            } },
+            {selector: '#staggered-test', offset: 400, callback: function(el) {
+                Materialize.showStaggeredList($(el));
+            } },
+            {selector: '#image-test', offset: 500, callback: function(el) {
+                Materialize.fadeInImage($(el));
+            } }
+        ];
+        Materialize.scrollFire(options);
     });
 
 </script>
