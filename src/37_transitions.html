@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>37_transitions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="37_transitions.css"/>
+</head>
+<body>
+    <!--opacity: 0; to ensure the animation works correctly.-->
+    <a href="#!" class="btn" onclick="Materialize.showStaggeredList('#staggered-test')">Click Me</a>
+    <ul id="staggered-test">
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+        <li>
+            <h4><a href="#">List Item</a></h4>
+            <p>This is a description</p>
+        </li>
+    </ul>
+
+    <a href="#!" class="btn" onclick="Materialize.fadeInImage('#image-test')">Click Me</a>
+
+    <img id="image-test" class="responsive-img" src="https://unsplash.imgix.net/reserve/nE6neNVdRPSIasnmePZe_IMG_1950.jpg?dpr=1.25&amp;fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050">
+
+
+</body>
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<script>
+    $(function(){
+
+    });
+
+</script>
+</html>
